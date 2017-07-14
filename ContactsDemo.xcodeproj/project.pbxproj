@@ -15,6 +15,8 @@
 		A5758BCF1F186917004EEAFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5758BCD1F186917004EEAFE /* LaunchScreen.storyboard */; };
 		A5758BDA1F186917004EEAFE /* ContactsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5758BD91F186917004EEAFE /* ContactsDemoTests.m */; };
 		A5758BE51F186917004EEAFE /* ContactsDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5758BE41F186917004EEAFE /* ContactsDemoUITests.m */; };
+		A5758BF41F1869E0004EEAFE /* ContactsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5758BF31F1869E0004EEAFE /* ContactsModel.m */; };
+		A5758BF71F186A32004EEAFE /* ContactsHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = A5758BF61F186A32004EEAFE /* ContactsHelp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		A5758BE01F186917004EEAFE /* ContactsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5758BE41F186917004EEAFE /* ContactsDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsDemoUITests.m; sourceTree = "<group>"; };
 		A5758BE61F186917004EEAFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5758BF21F1869E0004EEAFE /* ContactsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsModel.h; sourceTree = "<group>"; };
+		A5758BF31F1869E0004EEAFE /* ContactsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsModel.m; sourceTree = "<group>"; };
+		A5758BF51F186A32004EEAFE /* ContactsHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsHelp.h; sourceTree = "<group>"; };
+		A5758BF61F186A32004EEAFE /* ContactsHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsHelp.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				A5758BC31F186917004EEAFE /* AppDelegate.m */,
 				A5758BC51F186917004EEAFE /* ViewController.h */,
 				A5758BC61F186917004EEAFE /* ViewController.m */,
+				A5758BF21F1869E0004EEAFE /* ContactsModel.h */,
+				A5758BF31F1869E0004EEAFE /* ContactsModel.m */,
+				A5758BF51F186A32004EEAFE /* ContactsHelp.h */,
+				A5758BF61F186A32004EEAFE /* ContactsHelp.m */,
 				A5758BC81F186917004EEAFE /* Main.storyboard */,
 				A5758BCB1F186917004EEAFE /* Assets.xcassets */,
 				A5758BCD1F186917004EEAFE /* LaunchScreen.storyboard */,
@@ -278,7 +288,9 @@
 			files = (
 				A5758BC71F186917004EEAFE /* ViewController.m in Sources */,
 				A5758BC41F186917004EEAFE /* AppDelegate.m in Sources */,
+				A5758BF41F1869E0004EEAFE /* ContactsModel.m in Sources */,
 				A5758BC11F186917004EEAFE /* main.m in Sources */,
+				A5758BF71F186A32004EEAFE /* ContactsHelp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +441,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q3BSQNXP53;
 				INFOPLIST_FILE = ContactsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mandofin.ContactsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,6 +454,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q3BSQNXP53;
 				INFOPLIST_FILE = ContactsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mandofin.ContactsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

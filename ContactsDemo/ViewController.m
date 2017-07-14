@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "ContactsHelp.h"
+#import "ContactsModel.h"
 
 @interface ViewController ()
+
+@property(nonatomic, strong) ContactsHelp *contactsHelp;
 
 @end
 
@@ -17,13 +21,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self btn_getAll];
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)btn_getOne {
+    self.contactsHelp = [[ContactsHelp alloc] init];
+    [self.contactsHelp getOnePhoneInfoWithUI:self callBack:^(ContactsModel *contactModel) {
+        NSLog(@"-----------");
+        NSLog(@"%@", contactModel.name);
+        NSLog(@"%@", contactModel.num);
+    }];
 }
 
+- (IBAction)btn_getAll {
+    NSMutableArray *contactModels = [ContactsHelp getAllPhoneInfo];
+    if (contactModels.count > 0) {
+        [contactModels enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            ContactsModel *model = obj;
+            NSLog(@"-----------");
+            NSLog(@"%@", model.name);
+            NSLog(@"%@", model.num);
+        }];
+    }
+    
+}
 
 @end
